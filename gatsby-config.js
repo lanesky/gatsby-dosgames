@@ -37,10 +37,10 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `gatsby-starter-default`,
-        short_name: `starter`,
+        short_name: `DOS老游戏`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ea580c`,
+        theme_color: `#ea580c`,
         display: `minimal-ui`,
         icon: `src/images/gummy-gameboy.png`, // This path is relative to the root of the site.
       },
