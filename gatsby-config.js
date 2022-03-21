@@ -8,6 +8,7 @@ module.exports = {
     THE_FLAG: false,
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-transformer-json`,
