@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
                 >
                   <img
                     className="object-fit"
-                    src={`https://dosgames.s3.amazonaws.com/images/${game.identifier}/${game.coverFilename}`}
+                    src={`${process.env.IMAGE_SERVER_URL}/${game.identifier}/${game.coverFilename}`}
                     alt={game.identifier}
                   />
                 </div>

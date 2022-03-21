@@ -61,7 +61,7 @@ const Game: React.FC<PageProps<DataProps>> = ({ data }) => {
         >
           {!loading && (
             <DosPlayer
-              bundleUrl={`https://dosgames.s3.amazonaws.com/data/${data.game.identifier}.jsdos.zip`}
+              bundleUrl={`${process.env.BUNDLE_SERVER_URL}/${data.game.identifier}.jsdos.zip`}
             />
           )}
         </div>

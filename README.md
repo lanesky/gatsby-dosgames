@@ -6,6 +6,12 @@
 
 - https://cooldosgames.click/
 
+## 程序框架
+
+该程序使用 Gatsby。
+
+https://www.gatsbyjs.com/
+
 ## js-dos 引擎
 
 游戏的引擎由以下项目提供。
