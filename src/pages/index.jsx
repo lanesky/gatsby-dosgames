@@ -10,9 +10,9 @@ const IndexPage = ({ data }) => {
       <SEO title="首页" />
 
       <header className="mb-8">
-        <div className="w-1/2">
-          <h1 className="text-3xl text-gray-500 py-2">经典DOS老游戏在线玩</h1>
-          <p className="text-2xl font-bold text-gray-500 py-2">
+        <div className="w-full lg:w-1/2">
+          <h1 className="text-3xl text-gray-500 p-2">经典DOS老游戏在线玩</h1>
+          <p className="text-2xl font-bold text-gray-500 p-2">
             红色警戒，仙剑奇侠传，大富翁，这里有大量的经典的DOS老游戏。
             所有的游戏都是用js-dos，完全无需安装，直接在浏览器上就可以运行！
           </p>
@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
       </header>
 
       <main>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 px-2">
           {data.games.nodes.map(game => (
             <div
               className="p-2 bg-white hover:bg-orange-200 transition-colors rounded-xl shadow-lg"
