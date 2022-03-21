@@ -9,7 +9,7 @@ const AllPage = ({ data }) => {
     <Layout>
       <SEO title="所有游戏" />
       <main>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4 px-2">
           {data.games.nodes.map(game => (
             <Link to={`${game.slug}`}>{game.identifier}</Link>
           ))}
