@@ -32,6 +32,7 @@ export default function DosPlayer(props: PlayerProps) {
 
     return () => {
       instance.stop();
+      setDos(null);
     };
   }, [rootRef]);
 

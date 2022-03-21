@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="主页" />
+      <SEO title="首页" />
 
       <header className="mb-8">
         <div className="w-1/2">
@@ -38,7 +38,7 @@ const IndexPage = ({ data }) => {
                 >
                   <img
                     className="object-fit"
-                    src={`images/${game.identifier}/${game.coverFilename}`}
+                    src={`https://dosgames.s3.amazonaws.com/images/${game.identifier}/${game.coverFilename}`}
                     alt={game.identifier}
                   />
                 </div>

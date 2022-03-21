@@ -40,7 +40,7 @@ function Header({ siteTitle }) {
             href="#responsive-header"
             className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
           >
-            主页
+            首页
           </Link>
           <Link
             to={`/all`}

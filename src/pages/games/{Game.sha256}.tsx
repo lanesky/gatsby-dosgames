@@ -61,7 +61,7 @@ const Game: React.FC<PageProps<DataProps>> = ({ data }) => {
         >
           {!loading && (
             <DosPlayer
-              bundleUrl={`https://dosgames.s3.amazonaws.com/${data.game.identifier}.jsdos.zip`}
+              bundleUrl={`https://dosgames.s3.amazonaws.com/data/${data.game.identifier}.jsdos.zip`}
             />
           )}
         </div>
@@ -72,7 +72,7 @@ const Game: React.FC<PageProps<DataProps>> = ({ data }) => {
             {data.game.links &&
               data.game.links.map(link => (
                 <a
-                  className="text-lg block mb-2"
+                  className="text-lg text-green-700 hover:text-orange-700 block mb-2"
                   href={link.link}
                   target="_blank"
                   key={link.name}

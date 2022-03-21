@@ -10,19 +10,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-transformer-yaml`,
-      options: {
-        // Conditionally set the typeName so that we both use a lowercased and capitalized type name
-        typeName: ({ node }) => {
-          const name = node.sourceInstanceName;
-          if (name === `products`) {
-            return `Product`;
-          }
-          return name;
-        },
-      },
-    },
-    {
       resolve: `gatsby-transformer-json`,
       options: {
         // Conditionally set the typeName so that we both use a lowercased and capitalized type name
@@ -54,7 +41,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/gummy-gameboy.png`, // This path is relative to the root of the site.
       },
     },
     {
@@ -101,13 +88,6 @@ module.exports = {
         printRejected: false,
         develop: false,
         tailwind: true,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/products`,
-        name: `products`,
       },
     },
     {
